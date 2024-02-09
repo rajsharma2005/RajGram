@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="30sp"
+    tools:context=".Fragment.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+       android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIMage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/user"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="18sp"
+                />
+
+            <TextView
+                android:id="@+id/bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="8sp"
+                 />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/edit_profile"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="19dp"
+
+
+            android:backgroundTint="#1e88e5"
+            android:text="@string/edit_profile"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+        <!--
+        Here in button margin Start try it in your phone and
+        them if it goes out decrese it
+          -->
+
+
+
+
+<com.google.android.material.tabs.TabLayout
+    android:id="@+id/tab"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"/>
+
+
+   <androidx.viewpager.widget.ViewPager
+       android:id="@+id/viewPager"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+
+
+
+
+</LinearLayout>
